@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smooth Scroll</title>
+	<style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+    html{
+      /*This is all you need for smooth scroll*/
+      scroll-behavior: smooth;
+    }
+    .header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #254635;
+    }
+    .header__menu{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      list-style-type: none;
+    }
+    .header__menu_item{
+      display: inline-block;
+      padding: 21px;
+    }
+    .header__menu_link{
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .section{
+      height: 100vh;
+      font-size: 40px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .section:nth-child(odd){
+      background-color: #41765a;
+      color: #fff;
+    }
+    .section:nth-child(even){
+      color: #254635;
+    }
+	</style>
+</head>
+<body>
+  <header class="header">
+      <ul class="header__menu">
+        <li class="header__menu_item">
+          <a class="header__menu_link" href="#section1">Section 1</a>
+        </li>
+        <li class="header__menu_item">
+          <a class="header__menu_link" href="#section2">Section 2</a>
+        </li>
+        <li class="header__menu_item">
+          <a class="header__menu_link" href="#section3">Section 3</a>
+        </li>
+        <li class="header__menu_item">
+          <a class="header__menu_link" href="#section4">Section 4</a>
+        </li>
+        <li class="header__menu_item">
+          <a class="header__menu_link" href="#section5">Section 5</a>
+        </li>
+      </ul>
+  </header>
+  <main class="main">
+    <!-- Add your code inside sections -->
+    <section class="section" id="section1">Section 1</section>
+    <section class="section" id="section2">Section 2</section>
+    <section class="section" id="section3">Section 3</section>
+    <section class="section" id="section4">Section 4</section>
+    <section class="section" id="section5">Section 5</section>
+  </main>
+</body>
+</html>
+<!-- That's all :) -->
